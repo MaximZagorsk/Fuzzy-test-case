@@ -66,8 +66,8 @@
 
 `python test_unit.py`
 
-Так же есть возможность сравнения методов для нечеткого поиска, их можно вызвать:
-- `python test_levenshtein_library.py` Тест на время метода из библиотеки Levenshtein
+Так же есть возможность сравнения методов для нечеткого сравнения строк, их можно вызвать:
+- `python test_levenshtein_library.py` Тест на время метода из библиотеки Levenshtein, которая используется в прогармме
 - `python test_fuzzywuzzy.py` Тест на время метода из библиотеки fuzzywuzzy
 - `python test_fuzzyset.py` Тест на время метода из библиотеки fuzzyset
 - `python test_difflib_matching.py` Тест на время метода из библиотеки difflib
@@ -92,4 +92,4 @@
  функций\метрик с заданными аргументами.
 8. Было добавлено тестирование времени выполнения программы 
 по методам (Где библиотека Levenshtein обрабатывала файлы 
-намного быстрее чем fuzzyset, fuzzywuzzy, difflib, функция Левенштейна) и unit тестирование.
+намного быстрее чем fuzzyset, fuzzywuzzy, difflib) и unit тестирование.
