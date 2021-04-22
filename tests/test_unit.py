@@ -26,7 +26,7 @@ class TestMatchMethods(unittest.TestCase):
         self.assertEqual(test_class.matching("Пеньков", "Петров"), 62)
 
     # Тестирование функции класса FCSException
-    def test_fco_excepttion(self):
+    def test_fl_excepttion(self):
         test_class = FLException("example1.txt")
         self.assertRaises(TypeError, test_class.check_FL())
 
