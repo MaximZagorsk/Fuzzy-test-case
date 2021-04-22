@@ -12,9 +12,10 @@
 # Инструкция по эксплуатации
 Запуск программы происходит в таком виде:
 
-`main.py [-h] file1 file2 metrica FL_optional`
+`python main.py [-h] file1 file2 metrica FL_optional`
 
 По команде [-h] вызывается инструкция по использованию программы, для вызова инструкции введите:
+
 `python main.py -h`
 
 
