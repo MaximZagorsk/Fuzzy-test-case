@@ -1,4 +1,4 @@
-from fuzzywuzzy import fuzz
+from Levenshtein import ratio
 
 
 class FuzzyProgram:
@@ -47,4 +47,4 @@ class FuzzyProgram:
 
     # Функция проверки нечеткого сравнения строк
     def matching(self, str1, str2):
-        return fuzz.ratio(str1, str2)
+            return round(ratio(str1, str2) * 100)
