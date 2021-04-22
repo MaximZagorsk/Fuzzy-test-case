@@ -67,7 +67,7 @@
 `python test_unit.py`
 
 Так же есть возможность сравнения методов для нечеткого сравнения строк, их можно вызвать:
-- `python test_levenshtein_library.py` Тест на время метода из библиотеки Levenshtein, которая используется в прогармме
+- `python test_levenshtein_library.py` Тест на время метода из библиотеки Levenshtein, которая используется в программе
 - `python test_fuzzywuzzy.py` Тест на время метода из библиотеки fuzzywuzzy
 - `python test_fuzzyset.py` Тест на время метода из библиотеки fuzzyset
 - `python test_difflib_matching.py` Тест на время метода из библиотеки difflib
