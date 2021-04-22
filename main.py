@@ -46,7 +46,7 @@ except TypeError:
           " один из файлов несоответсвует формату ФИО, вычисление продолжается\n"
           "--- WARNING --- ")
 
-
+print("--- Начало работы программы ---")
 a = FuzzyProgram(args.file1, args.file2, args.metrica, split_num=args.FL_optional)
 start_time = time.time()
 a.create_matching()
