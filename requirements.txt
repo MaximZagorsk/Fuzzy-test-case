@@ -1,3 +1,5 @@
 fuzzyset==0.0.19
+fuzzywuzzy==0.18.0
+numpy==1.20.2
 python-Levenshtein==0.12.2
 texttable==1.6.3
