@@ -3,8 +3,8 @@ from fuzzywuzzy import fuzz
 
 class FuzzyProgram:
     def __init__(self, name_file1, name_file2, metrica, split_num=3):
-        self.file1 = open(name_file1, "r", encoding='utf-8')
-        self.file_name = name_file2
+        self.file1_name = name_file1
+        self.file2_name = name_file2
         self.metrica = metrica
         self.split_num = split_num
 
@@ -34,16 +34,16 @@ class FuzzyProgram:
     # Функция для поиска соответсвия
     def create_matching(self):
         file_output = open('result.txt', 'w')
-        file1 = self.file1
+        file1 = open(self.file1_name, "r", encoding='utf-8')
         for str1 in file1:
-            file2 = open(self.file_name, "r", encoding='utf-8')
+            file2 = open(self.file2_name, "r", encoding='utf-8')
             for str2 in file2:
                 str1 = str1.replace("\n", "")
                 str2 = str2.replace("\n", "")
                 self.check_metrica(file_output, str1, str2)
             file2.close()
-        file_output.close()
         file1.close()
+        file_output.close()
 
     # Функция проверки нечеткого сравнения строк
     def matching(self, str1, str2):
