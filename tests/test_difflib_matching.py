@@ -18,6 +18,5 @@ if __name__ == "__main__":
     a = DifflibRatioTest(name_file1, name_file2, "=100")
     start_time = time.time()
     a.create_matching()
-    print(a.main_temp)
     print("--- %s seconds ---" % (time.time() - start_time))
     #Файл в 6 мб обрабатывает --- 92.68708753585815 seconds ---

@@ -52,6 +52,5 @@ if __name__ == "__main__":
     a = LevenshteinTest(name_file1, name_file2, "=100")
     start_time = time.time()
     a.create_matching()
-    print(a.main_temp)
     print("--- %s seconds ---" % (time.time() - start_time))
 
